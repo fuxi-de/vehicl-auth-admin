@@ -54,7 +54,7 @@ export default {
   methods: {
     async handleSubmit() {
       try {
-        const response = await axios.post('/api/register', {
+        const response = await axios.post('/api/users/register', {
           uname: this.name,
           pw: this.password
         })
